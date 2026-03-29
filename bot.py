@@ -15,7 +15,7 @@ logging.basicConfig(
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 # Bot token (replace with your actual bot token)
-BOT_TOKEN = 8746267862:AAEhYMqTqt008Jl3tztgXcX9xFBRn3Yd_VM"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Sends a welcome message when the command /start is issued."""
